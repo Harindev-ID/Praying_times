@@ -1,5 +1,5 @@
 function prayerTimes(latitude, longitude){
-    fetch('https://api.aladhan.com/v1/calendar?latitude='+latitude+'&longitude='+longitude+'&method=2&month=10&year=2022')
+    fetch('https://api.aladhan.com/v1/calendar?latitude='+latitude+'&longitude='+longitude+'&method=11')
     .then(Response => Response.json())
     .then(function(Response){
         let date        = new Date();
