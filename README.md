@@ -1,2 +1,2 @@
 # Praying_times
-JS Prayer times
+Simple Moslem web Praying Times with Javascript, HTML, and CSS
