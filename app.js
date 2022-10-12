@@ -28,7 +28,8 @@ function success(position){
 }
 
 function error(){
-    alert('Your location not accessible');
+    // default use lat and long mecca
+    prayerTimes('21.422510', '39.826168');
 }
 
 function userlocation(){
