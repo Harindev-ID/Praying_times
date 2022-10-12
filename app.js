@@ -1,5 +1,13 @@
+function prayerTimes(latitude, longitude){
+    fetch('https://api.aladhan.com/v1/calendar?latitude='+latitude+'&longitude='+longitude+'&method=2&month=10&year=2022')
+    .then(Response => Response.json())
+    .then(function(Response){
+        console.log(Response.data[0].timings)
+    });
+}
+
 function success(position){
-    console.log(position);
+    prayerTimes(position.coords.latitude, position.coords.longitude);
 }
 
 function error(){
