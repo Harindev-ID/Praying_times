@@ -2,7 +2,10 @@ function prayerTimes(latitude, longitude){
     fetch('https://api.aladhan.com/v1/calendar?latitude='+latitude+'&longitude='+longitude+'&method=2&month=10&year=2022')
     .then(Response => Response.json())
     .then(function(Response){
-        console.log(Response.data[0].timings)
+        let date    = new Date();
+        let today   = date.getDate() - 1;
+        // console.log(today);
+        // console.log(Response.data[today]);
     });
 }
 
